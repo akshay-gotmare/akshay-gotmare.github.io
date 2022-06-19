@@ -39,13 +39,9 @@ Important JS concepts and functioning.
   ### iv. Callback functions:
   _Functions those are passed inside **high-order functions** or other functions._
     
-  ## v. FIRST CLASS functions AKA First Class Citizens/
+  ## v. First Class Functions OR First Class Citizens:
   _First-class functions are JavaScript functions that can behave like variables. They can also be passed as arguments to higher-order functions.
-  First Class Functions OR First Class Citizens:
-		The ability of functions to be used as values
-		& passed as arguments to another funtions and 
-		could be returned from functions is called 
-		"FIRST CLASS FUNCTIONS".
+  The ability of functions to be used as values& passed as arguments to another funtions and could be returned from functions is called "FIRST CLASS FUNCTIONS"._
 		
 	 var a = function (param) {
 	   console.log(param);
@@ -58,13 +54,16 @@ Important JS concepts and functioning.
 	function() {
 	  console.log("Arguement");
 	}
-#### 7. Function Statement vs Function Expression vs Function Declaration:
-#### _Function statement OR Function Declaration:_
+	
+	
+## 7. Function Statement vs Function Expression vs Function Declaration:
+> _Function statement OR Function Declaration:_
+	
 	function a() { 
 	  console.log("Function statement OR Function Declaration.");
 	}
 	
-##### _Function Expression:_
+> _Function Expression:_
 
 	var b = function () {
 	  console.log("Function Expression");
@@ -144,20 +143,21 @@ Difference b/w them is hoisting.
 	#### here the "this" refers to the "name" variable.
 	#### So, we can call "this.firstName" & "this.lastName"
 ---------------------------------------
-const users = [
-  {name:"akshay", age:25},
-  {name:"john", age:31},
-  {name:"Binod", age:25},
-  {name:"Jay", age:50}
-]
 
-const output = users.reduce((acc, curr) => {
-  if(acc[curr.age]){
-    acc[curr.age] = ++acc[curr.age]
-  }
-  else{
-    acc[curr.age] = 1
-  }
-  return acc
-}, {})
-console.log(output)
+		const users = [
+		  {name:"akshay", age:25},
+		  {name:"john", age:31},
+		  {name:"Binod", age:25},
+		  {name:"Jay", age:50}
+		]
+
+		const output = users.reduce((acc, curr) => {
+		  if(acc[curr.age]){
+		    acc[curr.age] = ++acc[curr.age]
+		  }
+		  else{
+		    acc[curr.age] = 1
+		  }
+		  return acc
+		}, {})
+		console.log(output)
