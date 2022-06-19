@@ -110,14 +110,16 @@ If a Micro-task in Micro-task Queue creates another micro-task and keeps going, 
 ## Concurrency Model:
 Tasks in callback queue have to wait for time u**ntil the call stack gets empty** irrespective of the fact that the task is ready to be executed in the call stack.
 	
-## [].map(), [].filter(), [].reduce() are "Higher-order functions".
+## |[].map()|[].filter()|[].reduce() 
+
+are "Higher-order functions".
 	
-## Example snippets:
 #### i. [].map():
 	-- to get all the numbers in array twiced
 	let arr = [1, 2, 3, 4, 5]
 	let output = arr.map(x => x * 2)
 	console.log(output)
+	
 > Output:
 
 	[2, 4, 6, 8, 10]
@@ -127,6 +129,7 @@ Tasks in callback queue have to wait for time u**ntil the call stack gets empty*
 	let arr = [1, 2, 3, 4, 5]
 	let output = arr.filter(x => x > 3)
 	console.log(output)
+	
 >Output:
 
 	[4, 5]
