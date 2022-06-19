@@ -55,7 +55,7 @@ Functions those are passed inside **high-order functions** or other functions.
 	}
 	
 	
-## 7. Function Statement vs Function Expression vs Function Declaration:
+## 11. Function Statement vs Function Expression vs Function Declaration:
 > **Function Statement OR Function Declaration:**
 	
 	function a() { 
@@ -74,14 +74,11 @@ Functions those are passed inside **high-order functions** or other functions.
 
 > Function Expression is allocated with "undefined". 
 
-## 8. Web API's:
-|setTimeout()|DOM API|fetch()|console()
-<!-- ### i. setTimeout()
-### ii. DOM API's
-### iii. Fetch()
-### iv. console() -->
+## 12. Web API's:
 
-## 9. Micro-task Queue:
+|setTimeout()|DOM API|fetch()|console()
+
+## 13. Micro-task Queue:
 All the callback functions coming through _**promises**_ will go to the **"Micro-task Queue"**.
 
 ## 10. Callback Queue AKA Task Queue(sometimes):
@@ -94,21 +91,21 @@ Callbacks other than those coming through promises will go to **"Callback Queue"
 
 > 🥈**Callback Queue**
 
-## 11. Event Loop:
+## 14. Event Loop:
 > Event loop continuously **keeps checking** if the CALL STACK is **empty**.
 
 > Once the call stack is **empty**, "Event Loop" **prioritizes** the functions/tasks in **"Micro-task Queue"** and pushes it in the **"call stack"**__ and gets executed **immediately**.
 
 > Once the "Micro-task Queue" and "Call stack" is empty the functions in the "Callback Queue" gets pushed to the "call stack" and gets executed **immediately**._
 
-## 12. Starvation of task inside callback queue:
+## 15. Starvation of task inside callback queue:
 > If a Micro-task in Micro-task Queue creates another micro-task and keeps going, the task inside Callback Queue will **never** get a chance to get executed, that is called "Starvation of task/s inside CallbackQueue".   ** READ MORE ON GOOGLE**
 	
 	Need to check::
 	Q.? Promises and Mutation observer?
 	Q.? Mark & Sweep algorithm?
 
-## 13. Concurrency Model:
+## 16. Concurrency Model:
 > Tasks in callback queue have to wait for time u**ntil the call stack gets empty** irrespective of the fact that the task is ready to be executed in the call stack.
 
 <!-- ## 14. > First-class functions are JavaScript functions that 
@@ -118,9 +115,9 @@ Callbacks other than those coming through promises will go to **"Callback Queue"
 	> Higher-order functions are functions that return a 
 	  function or take in a function as an argument.	 -->
 	
-## 15. [].map(), [].filter(), [].reduce() are "Higher-order functions".
+## 17. [].map(), [].filter(), [].reduce() are "Higher-order functions".
 	
-## 16. Example snippets:
+## Example snippets:
 #### i. [].map():
 	-- to get all the numbers in array twiced
 	let arr = [1, 2, 3, 4, 5]
