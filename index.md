@@ -7,12 +7,14 @@ Important JS concepts and functioning.
 | Header      | Title       | new |
 | Paragraph   | Text        | new | -->
 
-|example|example
-|example|example
-
 **Javascript topics:**
- |Lexial scope|Block scope|let, const, var| Closures|Function constructor
- | Yet to be added | Yet to be added | Yet to be added | Yet to be added | Yet to be added 
+|example|example|example
+|example|example|example
+|example|example|example
+|example|example|example
+
+
+|Lexial scope|Block scope|let, const, var| Closures|Function constructor
  
 <!-- ### 1. Lexial scope
 ### 2. Block scope
@@ -76,7 +78,7 @@ Important JS concepts and functioning.
 	Function Expression is allocated with "undefined".
 
 ## 8. Web API's:
-| setTimeout() | DOM API | fetch() | console()
+|setTimeout()|DOM API |fetch() |console()
 <!-- ### i. setTimeout()
 ### ii. DOM API's
 ### iii. Fetch()
@@ -87,9 +89,11 @@ _All the callback functions coming through promises will go to the **"Micro-task
 
 ## 10. Callback Queue AKA Task Queue(sometimes):
 _Callbacks other than those coming through promises will go to **"Callback Queue"**._
-`Priority:`
-🥇**Micro-task 
-🥈Queue Callback Queue**
+> `Priority:`
+
+> 🥇**Micro-task 
+
+> 🥈Queue Callback Queue**
 
 ## 11. Event Loop:
 > _Event loop continuously keeps checking if the CALL STACK is empty._
