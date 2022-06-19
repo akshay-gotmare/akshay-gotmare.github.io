@@ -36,11 +36,11 @@ Higher-order functions are functions that **_return_ a function** or take in a *
 Functions those are passed inside **high-order functions** or other functions.
 
 ### First Class Functions OR First Class Citizens:
-> First-class functions are JavaScript functions that can behave like variables.
+First-class functions are JavaScript functions that can behave like variables.
 
-> They can also be passed as arguments to higher-order functions.
+They can also be passed as arguments to higher-order functions.
 
-> The ability of functions to be **used as _variables_** & **passed as _arguments_** to another funtions and could be **_returned_ from functions** is called "FIRST CLASS FUNCTIONS".
+The ability of functions to be **used as _variables_** & **passed as _arguments_** to another funtions and could be **_returned_ from functions** is called "FIRST CLASS FUNCTIONS".
 		
 	 var a = function (param) {
 	   console.log(param);
@@ -100,14 +100,15 @@ Once the call stack is **empty**, "Event Loop" **prioritizes** the functions/tas
 Once the "Micro-task Queue" and "Call stack" is empty the functions in the "Callback Queue" gets pushed to the "call stack" and gets executed **immediately**.
 
 ## Starvation of task inside callback queue:
-> If a Micro-task in Micro-task Queue creates another micro-task and keeps going, the task inside Callback Queue will **never** get a chance to get executed, that is called "Starvation of task/s inside CallbackQueue".   ** READ MORE ON GOOGLE**
+If a Micro-task in Micro-task Queue creates another micro-task and keeps going, the task inside Callback Queue will **never** get a chance to get executed, that is called "Starvation of task/s inside CallbackQueue".   
+> ** READ MORE ON GOOGLE**
 	
 	Need to check::
 	Q.? Promises and Mutation observer?
 	Q.? Mark & Sweep algorithm?
 
 ## Concurrency Model:
-> Tasks in callback queue have to wait for time u**ntil the call stack gets empty** irrespective of the fact that the task is ready to be executed in the call stack.
+Tasks in callback queue have to wait for time u**ntil the call stack gets empty** irrespective of the fact that the task is ready to be executed in the call stack.
 	
 ## [].map(), [].filter(), [].reduce() are "Higher-order functions".
 	
