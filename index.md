@@ -110,7 +110,7 @@ If a Micro-task in Micro-task Queue creates another micro-task and keeps going, 
 ## Concurrency Model:
 Tasks in callback queue have to wait for time u**ntil the call stack gets empty** irrespective of the fact that the task is ready to be executed in the call stack.
 	
-## |[].map()|[].filter()|[].reduce() 
+|[].map()|[].filter()|[].reduce() 
 
 are "Higher-order functions".
 	
