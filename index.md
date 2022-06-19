@@ -9,7 +9,7 @@ Important JS concepts and functioning.
 
 **Javascript topics:**
 
-|1. Lexial scope|2. Block scope|3. let, const, var|4 Closures|5. Function constructor
+|1. Lexial scope|2. Block scope|3. let, const, var|4. Closures|5. Function constructor
  
 <!-- ### 1. Lexial scope
 ### 2. Block scope
@@ -40,7 +40,7 @@ First-class functions are JavaScript functions that can behave like variables.
 
 They can also be passed as arguments to higher-order functions.
 
-The ability of functions to be **used as _variables_** & **passed as _arguments_** to another funtions and could be **_returned_ from functions** is called "FIRST CLASS FUNCTIONS".
+> The ability of functions to be **used as _variables_** & **passed as _arguments_** to another funtions and could be **_returned_ from functions** is called "First Class Functions".
 		
 	 var a = function (param) {
 	   console.log(param);
@@ -109,9 +109,10 @@ If a Micro-task in Micro-task Queue creates another micro-task and keeps going, 
 
 ## Concurrency Model:
 Tasks in callback queue have to wait for time u**ntil the call stack gets empty** irrespective of the fact that the task is ready to be executed in the call stack.
-	
-|[].map()|[].filter()|[].reduce() 
 
+## Map, Filter & Reduce:
+
+|[].map()|[].filter()|[].reduce() 
 are "Higher-order functions".
 	
 #### i. [].map():
