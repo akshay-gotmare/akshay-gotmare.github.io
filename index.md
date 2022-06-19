@@ -113,6 +113,7 @@ Tasks in callback queue have to wait for time u**ntil the call stack gets empty*
 ## Map, Filter & Reduce:
 
 |[].map()|[].filter()|[].reduce() 
+
 are "Higher-order functions".
 	
 #### i. [].map():
