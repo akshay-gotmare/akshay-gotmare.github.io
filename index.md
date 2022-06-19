@@ -136,8 +136,8 @@ Tasks in callback queue have to wait for time u**ntil the call stack gets empty*
 	const users = [
 		  {name:"akshay", age:25},
 		  {name:"john", age:31},
-		  {name:"Binod", age:25},
-		  {name:"Jay", age:50}
+		  {name:"binod", age:25},
+		  {name:"jay", age:50}
 		]
 
 		const output = users.reduce((acc, curr) => {
@@ -150,6 +150,13 @@ Tasks in callback queue have to wait for time u**ntil the call stack gets empty*
 		  return acc
 		}, {})
 		console.log(output)
+		
+> Output:
+	
+	{25:2, 31:1, 50:1}
+		
+#### Example snippets:
+
 	let name = {
 		  firstName: "Akshay",
 		  lastName: "Gotmare",
@@ -158,6 +165,11 @@ Tasks in callback queue have to wait for time u**ntil the call stack gets empty*
 		  }
 		}
 		name.printFullName()
+		
+> Output:
+
+	"Akshay Gotmare"
+		
 	
 > Here the "**this**" refers to the "**name**" variable.
 
