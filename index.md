@@ -11,9 +11,8 @@ Important JS concepts and functioning.
 |example|example
 
 **Javascript topics:**
- |Lexial scope| Block scope | let, const, var | Closures | Function constructor |
- ||||||
- | Yet to be added | Yet to be added | Yet to be added | Yet to be added | Yet to be added |
+ |Lexial scope|Block scope|let, const, var| Closures|Function constructor
+ | Yet to be added | Yet to be added | Yet to be added | Yet to be added | Yet to be added 
  
 <!-- ### 1. Lexial scope
 ### 2. Block scope
@@ -21,16 +20,14 @@ Important JS concepts and functioning.
 ### 4. Closures
 ### 5. Function constructor -->
 ## 6. Anonymous functions:
-| _Function without any **name** or without **identity**, which can be used for function expression._ |
-|---|
+|_Function without any **name** or without **identity**, which can be used for function expression._|
   
      var a = function() {
        console.log("Anonymous function");
      }
   
 ## 7. High order functions
-| _Higher-order functions are functions that return a function or take in a function as an argument._|
-|---|
+|_Higher-order functions are functions that return a function or take in a function as an argument._|
 
 ## 8. Arrow functions:
   
@@ -79,10 +76,11 @@ Important JS concepts and functioning.
 	Function Expression is allocated with "undefined".
 
 ## 8. Web API's:
-### i. setTimeout()
+| setTimeout() | DOM API | fetch() | console()
+<!-- ### i. setTimeout()
 ### ii. DOM API's
 ### iii. Fetch()
-### iv. console()
+### iv. console() -->
 
 ## 9. Micro-task Queue:
 _All the callback functions coming through promises will go to the **"Micro-task Queue"**._
