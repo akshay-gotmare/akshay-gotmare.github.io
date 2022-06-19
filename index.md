@@ -22,14 +22,14 @@ Important JS concepts and functioning.
 ### 4. Closures
 ### 5. Function constructor -->
 ## 6. Anonymous functions:
-|_Function without any **name** or without **identity**, which can be used for function expression._
+Function without any **name** or without **identity**, which can be used for function expression.
   
      var a = function() {
        console.log("Anonymous function");
      }
   
 ## 7. High order functions
-|_Higher-order functions are functions that return a function or take in a function as an argument._
+Higher-order functions are functions that **_return_ a function** or take in a **function as an _argument_**.
 
 ## 8. Arrow functions:
   
@@ -38,14 +38,14 @@ Important JS concepts and functioning.
 	  }
 	
 ## 9. Callback functions:
-> _Functions those are passed inside **high-order functions** or other functions._
+Functions those are passed inside **high-order functions** or other functions.
 
 ### 10. First Class Functions OR First Class Citizens:
-> _First-class functions are JavaScript functions that can behave like variables._
+> First-class functions are JavaScript functions that can behave like variables.
 
-> _They can also be passed as arguments to higher-order functions._
+> They can also be passed as arguments to higher-order functions.
 
-> _The ability of functions to be used as values& passed as arguments to another funtions and could be returned from functions is called "FIRST CLASS FUNCTIONS"._
+> The ability of functions to be **used as _variables_** & **passed as _arguments_** to another funtions and could be **_returned_ from functions** is called "FIRST CLASS FUNCTIONS".
 		
 	 var a = function (param) {
 	   console.log(param);
@@ -61,56 +61,60 @@ Important JS concepts and functioning.
 	
 	
 ## 7. Function Statement vs Function Expression vs Function Declaration:
-> _Function statement OR Function Declaration:_
+> **Function Statement OR Function Declaration:**
 	
 	function a() { 
 	  console.log("Function statement OR Function Declaration.");
 	}
 	
-> _Function Expression:_
+> **Function Expression:**
 
 	var b = function () {
 	  console.log("Function Expression");
 	}
 		
->Difference b/w them is hoisting.
-	Function Statement is allocated memory and executed.
-	Function Expression is allocated with "undefined".
+> Difference between them is **hoisting**.
+
+> Function Statement is allocated memory and executed.
+
+> Function Expression is allocated with "undefined". 
 
 ## 8. Web API's:
-|setTimeout()|DOM API |fetch() |console()
+|setTimeout()|DOM API|fetch()|console()
 <!-- ### i. setTimeout()
 ### ii. DOM API's
 ### iii. Fetch()
 ### iv. console() -->
 
 ## 9. Micro-task Queue:
-_All the callback functions coming through promises will go to the **"Micro-task Queue"**._
+All the callback functions coming through _**promises**_ will go to the **"Micro-task Queue"**.
 
 ## 10. Callback Queue AKA Task Queue(sometimes):
-_Callbacks other than those coming through promises will go to **"Callback Queue"**._
-> `Priority:`
+Callbacks other than those coming through promises will go to **"Callback Queue"**.
 
-> 🥇**Micro-task 
 
-> 🥈Queue Callback Queue**
+`Event Loop Priority/Precedence:`
+
+> 🥇**Micro-task Queue**
+
+> 🥈**Callback Queue**
 
 ## 11. Event Loop:
-> _Event loop continuously keeps checking if the CALL STACK is empty._
+> Event loop continuously **keeps checking** if the CALL STACK is **empty**.
 
-> _Once the call stack is empty, "Event Loop" prioritizes the functions "Micro-task Queue" and pushes it in the **"call stack"**__ and gets executed immediately._
+> Once the call stack is **empty**, "Event Loop" **prioritizes** the functions/tasks in **"Micro-task Queue"** and pushes it in the **"call stack"**__ and gets executed **immediately**.
 
-> _Once the "Micro-task Queue" and "Call stack" is empty the functions in the "Callback Queue" gets pushed to the "call stack" and gets executed **immediately**._
+> Once the "Micro-task Queue" and "Call stack" is empty the functions in the "Callback Queue" gets pushed to the "call stack" and gets executed **immediately**._
 
 ## 12. Starvation of task inside callback queue:
-> _If a Micro-task in Micro-task Queue creates another micro-task and keeps going, the task inside Callback Queue will never get a chance to get executed, that is called "Starvation of task/s inside CallbackQueue.   ** READ MORE ON GOOGLE**_
+> If a Micro-task in Micro-task Queue creates another micro-task and keeps going, the task inside Callback Queue will **never** get a chance to get executed, that is called "Starvation of task/s inside CallbackQueue".   ** READ MORE ON GOOGLE**
 	
 	Need to check::
 	Q.? Promises and Mutation observer?
 	Q.? Mark & Sweep algorithm?
 
 ## 13. Concurrency Model:
-> Tasks in callback queue have to wait for time until the call stack gets empty irrespective of the fact that the task is ready to be executed in the call stack.
+> Tasks in callback queue have to wait for time u**ntil the call stack gets empty** irrespective of the fact that the task is ready to be executed in the call stack.
 
 <!-- ## 14. > First-class functions are JavaScript functions that 
 	  can behave like variables. They can also be passed 
@@ -139,6 +143,7 @@ _Callbacks other than those coming through promises will go to **"Callback Queue
 >Output:
 
 	[4, 5]
+
 #### iii. [].reduce():
 	
 	const users = [
@@ -167,6 +172,6 @@ _Callbacks other than those coming through promises will go to **"Callback Queue
 		}
 		name.printFullName()
 	
-> Here the "this" refers to the "name" variable.
+> Here the "**this**" refers to the "**name**" variable.
 
-> So, we can call "this.firstName" & "this.lastName"
+> So, we can call "**this.firstName**" & "**this.lastName**"
