@@ -22,18 +22,19 @@ Important JS concepts and functioning.
  | _Function without any **name** or without **identity**, which can be used for function expression._ |
  |---|
   
-                                             var a = function() {
-                                               console.log("Anonymous function");
-                                             }
+     var a = function() {
+       console.log("Anonymous function");
+     }
   
   ### ii. High order functions
   | _Higher-order functions are functions that return a function or take in a function as an argument._|
   |---|
     
-  ## iii. Arrow functions:
-                                            const arrowFunction = () => {
-                                              console.log("Arrow function");
-                                            }
+  ### iii. Arrow functions:
+  
+	  const arrowFunction = () => {
+	    console.log("Arrow function");
+	  }
 	
   ### iv. Callback functions:
   _Functions those are passed inside **high-order functions** or other functions._
@@ -45,31 +46,29 @@ Important JS concepts and functioning.
 		& passed as arguments to another funtions and 
 		could be returned from functions is called 
 		"FIRST CLASS FUNCTIONS".
-		e.g.
-    
-                                            var a = function (param) {
-                                              console.log(param);
-                                            }
-                                            a(function() {
-                                              console.log("Arguement");
-                                            })
+		
+	 var a = function (param) {
+	   console.log(param);
+	 }
+	 a(function() {
+	     console.log("Arguement");
+	 })
    Output: 
                                               
-                                              function() {
-                                                console.log("Arguement");
-                                              }
+	function() {
+	  console.log("Arguement");
+	}
 #### 7. Function Statement vs Function Expression vs Function Declaration:
 #### _Function statement OR Function Declaration:_
-    
-                                            function a() { 
-                                               console.log("Function statement OR Function Declaration.");
-                                            }
+	function a() { 
+	  console.log("Function statement OR Function Declaration.");
+	}
 	
 ##### _Function Expression:_
 
-                                              var b = function () {
-                                                console.log("Function Expression");
-                                              }
+	var b = function () {
+	  console.log("Function Expression");
+	}
 		
 Difference b/w them is hoisting.
 	Function Statement is allocated memory and executed.
