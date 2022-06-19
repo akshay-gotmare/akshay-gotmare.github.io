@@ -8,13 +8,8 @@ Important JS concepts and functioning.
 | Paragraph   | Text        | new | -->
 
 **Javascript topics:**
-|example|example|example
-|example|example|example
-|example|example|example
-|example|example|example
 
-
-|Lexial scope|Block scope|let, const, var| Closures|Function constructor
+|1. Lexial scope|2. Block scope|3. let, const, var|4 Closures|5. Function constructor
  
 <!-- ### 1. Lexial scope
 ### 2. Block scope
