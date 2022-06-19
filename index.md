@@ -22,14 +22,14 @@ Important JS concepts and functioning.
 ### 4. Closures
 ### 5. Function constructor -->
 ## 6. Anonymous functions:
-|_Function without any **name** or without **identity**, which can be used for function expression._|
+|_Function without any **name** or without **identity**, which can be used for function expression._
   
      var a = function() {
        console.log("Anonymous function");
      }
   
 ## 7. High order functions
-|_Higher-order functions are functions that return a function or take in a function as an argument._|
+|_Higher-order functions are functions that return a function or take in a function as an argument._
 
 ## 8. Arrow functions:
   
